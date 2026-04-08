@@ -1,0 +1,430 @@
+﻿@model IEnumerable<DoAnMonWeb.Models.SanPham>
+@{
+	Layout = "_Layout";
+	ViewData["Title"] = "Quản lý";
+}
+<script src="~/js/adminBtn.js" defer></script>
+<link href="~/css/quanlysp.css" rel="stylesheet" asp-append-version="true" />
+<div class="container__quanly">
+	<div class="container__left__quanly">
+		<div class="quanly__btn">
+			<button class="quanly dashboard-btn is-chossen">Dashboard</button>
+			<button class="quanly sanpham-btn">Sản phẩm</button>
+			<button class="quanly loaisanpham-btn">Loại sản phẩm</button>
+			<button class="quanly kichco-btn">Kích cỡ sản phẩm</button>
+			<button class="quanly mausac-btn">Màu sắc</button>
+			<button class="quanly donhang-btn">Đơn hàng</button>
+			<button class="quanly taikhoan-btn">Tài khoản</button>
+			<form asp-controller="QuanLy" asp-action="DangXuat" method="post">
+				<button type="submit" class="quanly dangxuat">Đăng xuất</button>
+			</form>
+		</div>
+	</div>
+	<div class="container__right__quanly">
+		<div class="quanly-content dashboard">
+			<h1 class="h1-trangquanly">Tổng quan hệ thống</h1>
+
+			<div class="dashboard-stats">
+				<div class="stat-card revenue">
+					<div class="stat-icon"><i class="fas fa-dollar-sign"></i></div>
+					<div class="stat-info">
+						<span class="stat-label">Doanh thu</span>
+						<span class="stat-value">@ViewBag.TongDoanhThu?.ToString("N0") đ</span>
+					</div>
+				</div>
+
+				<div class="stat-card orders">
+					<div class="stat-icon"><i class="fas fa-shopping-cart"></i></div>
+					<div class="stat-info">
+						<span class="stat-label">Đơn hàng mới</span>
+						<span class="stat-value">@ViewBag.DonHangMoiCount</span>
+					</div>
+				</div>
+
+				<div class="stat-card users">
+					<div class="stat-icon"><i class="fas fa-users"></i></div>
+					<div class="stat-info">
+						<span class="stat-label">Khách hàng</span>
+						<span class="stat-value">@ViewBag.UserCount</span>
+					</div>
+				</div>
+
+				<div class="stat-card products">
+					<div class="stat-icon"><i class="fas fa-box"></i></div>
+					<div class="stat-info">
+						<span class="stat-label">Sản phẩm</span>
+						<span class="stat-value">@ViewBag.ProductCount</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="dashboard-recent">
+				<div class="recent-box">
+					<div class="recent-header">
+						<h3>Đơn hàng mới nhất</h3>
+						<button onclick="document.querySelector('.donhang-btn').click()" class="btn-view-all">Xem tất cả</button>
+					</div>
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th>Mã ĐH</th>
+								<th>Khách hàng</th>
+								<th>Tổng tiền</th>
+								<th>Trạng thái</th>
+							</tr>
+						</thead>
+						<tbody>
+							@if (ViewBag.RecentOrders != null)
+							{
+								foreach (var item in ViewBag.RecentOrders)
+								{
+									<tr>
+										<td>#@item.MaDonHang</td>
+										<td>@item.TenNguoiNhan</td>
+										<td>@item.TongTien.ToString("N0") đ</td>
+										<td><span class="badge-status">@item.TrangThai</span></td>
+									</tr>
+								}
+							}
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="quanly-content sanpham is-hidden">
+			<h1 class="thongtinsanpham">Chỉnh sửa thông tin sản phẩm</h1>
+			<div class="btn-add-sp">
+				<a class="btn btn-success btn-sm" asp-controller="QuanLySP" asp-action="ThemSP">Thêm sản phẩm</a>
+			</div>
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>Ảnh</th>
+						<th>Tên SP</th>
+						<th>Giá</th>
+						<th>Mô tả</th>
+						<th>Loại</th>
+						<th>Hành động</th>
+					</tr>
+				</thead>
+				<tbody>
+					@if (Model != null && Model.Any())
+					{
+						@foreach (var sp in Model)
+						{
+							<tr>
+								<td>
+									@if (!string.IsNullOrEmpty(sp.HinhAnh))
+									{
+										<img src="~/images/QuanAo/@sp.HinhAnh" width="80" />
+									}
+								</td>
+								<td>@sp.TenSP</td>
+								<td>@sp.Gia</td>
+								<td>@sp.MoTa</td>
+								<td>@sp.MaLoai</td>
+								<td>
+									<a class="btn btn-primary btn-sm" asp-controller="QuanLySP" asp-action="SuaSP" asp-route-id="@sp.MaSP">Sửa</a>
+									<a class="btn btn-danger btn-sm" asp-controller="QuanLySP" asp-action="XoaSP" asp-route-id="@sp.MaSP"
+									   onclick="return confirm('Bạn có chắc muốn xóa?');">Xóa</a>
+								</td>
+							</tr>
+						}
+					}
+				</tbody>
+			</table>
+		</div>
+		<div class="quanly-content loaisanpham is-hidden">
+			<h1 class="thongtinsanpham">Chỉnh sửa loại sản phẩm</h1>
+
+			<div class="btn-add-sp">
+				<a class="btn btn-success btn-sm"
+				   asp-controller="QuanLyLSP"
+				   asp-action="ThemLSP">
+					Thêm loại sản phẩm
+				</a>
+			</div>
+
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>Mã loại</th>
+						<th>Tên loại</th>
+						<th>Hành động</th>
+					</tr>
+				</thead>
+				<tbody>
+					@if (ViewBag.LoaiList != null && ((List<LoaiSanPham>)ViewBag.LoaiList).Any())
+					{
+						var loaiList = ViewBag.LoaiList as List<DoAnMonWeb.Models.LoaiSanPham>;
+
+						foreach (var loai in loaiList)
+						{
+							<tr>
+								<td>@loai.MaLoai</td>
+								<td>@loai.TenLoai</td>
+								<td>
+									<a class="btn btn-primary btn-sm"
+									   asp-controller="QuanLyLSP"
+									   asp-action="SuaLSP"
+									   asp-route-id="@loai.MaLoai">
+										Sửa
+									</a>
+
+									<a class="btn btn-danger btn-sm"
+									   asp-controller="QuanLyLSP"
+									   asp-action="XoaLSP"
+									   asp-route-id="@loai.MaLoai"
+									   onclick="return confirm('Bạn có chắc muốn xóa?');">
+										Xóa
+									</a>
+								</td>
+							</tr>
+						}
+					}
+					else
+					{
+						<tr>
+							<td colspan="3" style="text-align:center;">Không có loại sản phẩm nào</td>
+						</tr>
+					}
+				</tbody>
+			</table>
+		</div>
+		<div class="quanly-content kichco is-hidden">
+			<h1 class="thongtinsanpham">Quản lý kích cỡ</h1>
+			<div class="btn-add-sp">
+				<a class="btn btn-success btn-sm"
+				   asp-controller="QuanLyKichCo"
+				   asp-action="ThemKC">
+					Thêm kích cỡ
+				</a>
+			</div>
+
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>Mã</th>
+						<th>Tên kích cỡ</th>
+						<th>Hành động</th>
+					</tr>
+				</thead>
+				<tbody>
+					@if (ViewBag.KichCoList != null)
+					{
+						var list = ViewBag.KichCoList as List<DoAnMonWeb.Models.KichCo>;
+
+						foreach (var kc in list)
+						{
+							<tr>
+								<td>@kc.MaKichCo</td>
+								<td>@kc.TenKichCo</td>
+								<td>
+									<a class="btn btn-primary btn-sm"
+									   asp-controller="QuanLyKichCo"
+									   asp-action="SuaKC"
+									   asp-route-id="@kc.MaKichCo">
+										Sửa
+									</a>
+
+									<a class="btn btn-danger btn-sm"
+									   asp-controller="QuanLyKichCo"
+									   asp-action="XoaKC"
+									   asp-route-id="@kc.MaKichCo"
+									   onclick="return confirm('Xóa?')">
+										Xóa
+									</a>
+								</td>
+							</tr>
+						}
+					}
+				</tbody>
+			</table>
+		</div>		
+		<div class="quanly-content mausac is-hidden">
+			<h1 class="thongtinsanpham">Màu sắc</h1>
+
+			<a class="btn btn-success"
+			   asp-controller="QuanLyMauSac"
+			   asp-action="ThemMS">
+				Thêm màu
+			</a>
+
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>Mã</th>
+						<th>Tên màu</th>
+						<th>Hành động</th>
+					</tr>
+				</thead>
+				<tbody>
+					@if (ViewBag.MauSacList != null)
+					{
+						foreach (var mau in ViewBag.MauSacList)
+						{
+							<tr>
+								<td>@mau.MaMauSac</td>
+								<td>@mau.TenMauSac</td>
+								<td>
+									<a asp-controller="QuanLyMauSac"
+									   asp-action="SuaMS"
+									   asp-route-id="@mau.MaMauSac"
+									   class="btn btn-primary btn-sm">Sửa</a>
+
+									<a asp-controller="QuanLyMauSac"
+									   asp-action="XoaMS"
+									   asp-route-id="@mau.MaMauSac"
+									   class="btn btn-danger btn-sm"
+									   onclick="return confirm('Xóa?')">Xóa</a>
+								</td>
+							</tr>
+						}
+					}
+					else
+					{
+						<tr>
+							<td colspan="3" style="text-align:center;">
+								Không có màu nào
+							</td>
+						</tr>
+					}
+				</tbody>
+			</table>
+		</div>
+		<div class="quanly-content donhang is-hidden">
+			<h1 class="thongtinsanpham">Đơn hàng</h1>
+
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>Mã</th>
+						<th>Mã TK</th>
+						<th>Tổng tiền</th>
+						<th>Thanh toán</th>
+						<th>Ngày đặt</th>
+						<th>Trạng thái</th>
+						<th>Chi Tiết</th>
+					</tr>
+				</thead>
+				<tbody>
+					@if (ViewBag.DonHangList != null)
+					{
+						foreach (var dh in ViewBag.DonHangList)
+						{
+							<tr>
+								<td>@dh.MaDonHang</td>
+								<td>@dh.MaTK</td>
+								<td>@dh.TongTien.ToString("N0") đ</td>
+								<td>@dh.PhuongThucThanhToan</td>
+								<td>@dh.NgayDat?.ToString("dd/MM/yyyy")</td>
+
+								<td>
+									<form asp-controller="QuanLyDonHang"
+										  asp-action="CapNhatTrangThai"
+										  method="post">
+
+										<input type="hidden" name="id" value="@dh.MaDonHang" />
+
+										<select name="trangThai" class="form-control">
+											<option selected>@dh.TrangThai</option>
+											<option>Chờ xử lý</option>
+											<option>Đang giao</option>
+											<option>Hoàn thành</option>
+											<option>Hủy</option>
+										</select>
+
+										<button class="btn btn-sm btn-primary mt-1">OK</button>
+									</form>
+								</td>
+								<td>
+									<a asp-controller="QuanLyDonHang"
+									   asp-action="ChiTiet"
+									   asp-route-id="@dh.MaDonHang"
+									   class="btn btn-info btn-sm">
+										Xem chi tiết
+									</a>
+								</td>
+							</tr>
+						}
+					}
+				</tbody>
+			</table>
+		</div>
+		<div class="quanly-content taikhoan is-hidden">
+			<h1 class="thongtinsanpham">Quản lý tài khoản</h1>
+
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>Mã</th>
+						<th>Tên</th>
+						<th>Họ tên</th>
+						<th>Email</th>
+						<th>SĐT</th>
+						<th>Vai trò</th>
+						<th>Ngày tạo</th>
+						<th>Hành động</th>
+					</tr>
+				</thead>
+				<tbody>
+					@if (ViewBag.TaiKhoanList != null)
+					{
+						foreach (var tk in ViewBag.TaiKhoanList)
+						{
+							<tr>
+								<td>@tk.MaTK</td>
+								<td>@tk.Ten</td>
+								<td>@tk.FullName</td>
+								<td>@tk.Email</td>
+								<td>@tk.Sdt</td>
+
+								<td>
+									<form asp-controller="QuanLyTaiKhoan"
+										  asp-action="DoiVaiTro"
+										  method="post">
+
+										<input type="hidden" name="id" value="@tk.MaTK" />
+
+										<select name="vaiTro" class="form-control">
+											<option selected>@(tk.VaiTro ?? "User")</option>
+											<option>User</option>
+											<option>Admin</option>
+										</select>
+
+										<button class="btn btn-primary btn-sm mt-1">OK</button>
+									</form>
+								</td>
+
+								<td>@tk.ThoiGianTao?.ToString("dd/MM/yyyy")</td>
+
+								<td>
+									<a asp-controller="QuanLyTaiKhoan"
+									   asp-action="ChiTietTK"
+									   asp-route-id="@tk.MaTK"
+									   class="btn btn-info btn-sm">
+										Xem chi tiết
+									</a>
+									@if (tk.VaiTro != "Admin")
+									{
+										<a asp-controller="QuanLyTaiKhoan"
+										   asp-action="XoaTK"
+										   asp-route-id="@tk.MaTK"
+										   class="btn btn-danger btn-sm"
+										   onclick="return confirm('Xóa tài khoản?')">
+											Xóa
+										</a>
+									}
+									else
+									{
+										<span style="color:gray;">Admin</span>
+									}
+								</td>
+							</tr>
+						}
+					}
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,137 @@
+﻿@using DoAnMonWeb.Models
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Thanh toán";
+    var gioHang = ViewBag.GioHang as List<GioHangItem>;
+    var maTK = Context.Session.GetInt32("MaTK");
+}
+<link rel="stylesheet" href="~/css/dathang.css" asp-append-version="true" />
+<section>
+    <div class="container__dathang">
+        <div class="header__trangchu">
+            <a asp-controller="SanPham" asp-action="Index">
+                Trang chủ
+            </a>
+        </div>
+        <p>/</p>
+        <div class="header__dathang">
+            Thanh Toán
+        </div>
+    </div>
+</section>
+<div class="checkout-wrapper">
+    <div class="container">
+        <form asp-action="XacNhanDatHang" asp-controller="DonHang" method="post">
+            <div class="checkout-grid">
+
+                <div class="checkout-left">
+                    @if (maTK == null)
+                    {
+                        <div class="alert-login-box">
+                            <span>Đăng nhập để mua hàng tiện lợi và nhận được nhiều ưu đãi hơn nữa</span>
+                            <a href="@Url.Action("DangNhap", "TaiKhoan")" class="btn-login-small">Đăng nhập</a>
+                        </div>
+                    }
+
+                    <div class="checkout-section">
+                        <h4 class="section-title">Thông tin giao hàng</h4>
+
+                        @if (maTK != null && ViewBag.DanhSachDiaChi != null)
+                        {
+                            <div class="address-selector">
+                                @foreach (var dc in (List<DiaChi>)ViewBag.DanhSachDiaChi)
+                                {
+                                    <label class="address-item">
+                                        <input type="radio" name="MaDiaChi" value="@dc.MaDiaChi" @(dc.IsDefault ? "checked" : "") required />
+                                        <div class="address-detail">
+                                            <strong>@dc.HoTen</strong> | @dc.Sdt <br />
+                                            <small>@dc.DiaChiChiTiet</small>
+                                        </div>
+                                    </label>
+                                }
+                                <a href="@Url.Action("DashboardLogin", "TaiKhoan")" class="add-address-link">+ Thêm địa chỉ mới</a>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="guest-form">
+                                <input type="text" name="HoTenKhach" placeholder="Họ và tên" class="input-custom" required />
+                                <input type="text" name="SdtKhach" placeholder="Số điện thoại" class="input-custom" required />
+                                <input type="email" name="EmailKhach" placeholder="E-mail" class="input-custom" />
+                                <input type="text" name="DiaChiKhach" placeholder="Địa chỉ giao hàng (Số nhà, đường...)" class="input-custom" required />
+                            </div>
+                        }
+                    </div>
+
+                    <div class="checkout-section mt-4">
+                        <h4 class="section-title">Phương thức thanh toán</h4>
+                        <div class="payment-options">
+                            <label class="payment-method-item active">
+                                <input type="radio" name="PhuongThuc" value="COD" checked />
+                                <img src="~/images/icon/cash-on-delivery.png" width="24" />'
+                                <span>Thanh toán khi giao hàng (COD)</span>
+                            </label>
+                            <label class="payment-method-item">
+                                <input type="radio" name="PhuongThuc" value="VNPAY" />
+                                <img src="~/images/icon/vnpay.png" width="24" />
+                                <span>Thanh toán qua VNPay</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="mt-3">
+                        <textarea name="GhiChu" class="input-custom" placeholder="Ghi chú đơn hàng" rows="2"></textarea>
+                    </div>
+                </div>
+
+                <div class="checkout-right">
+                    <div class="checkout-section">
+                        <h4 class="section-title">Hàng hóa</h4>
+                        <div class="cart-items-preview">
+                            @if (gioHang != null && gioHang.Any())
+                            {
+                                foreach (var item in gioHang)
+                                {
+                                    <div class="item-mini">
+                                        <img src="~/images/QuanAo/@item.HinhAnh" width="50" />
+                                        <div class="item-info">
+                                            <p>@item.TenSP (@item.SoLuong)</p>
+                                            <span>@item.Gia.ToString("N0")đ</span>
+                                        </div>
+                                    </div>
+                                }
+                            }
+                            else
+                            {
+                                <div class="empty-cart text-center py-4">
+                                    <img src="~/images/icon/shopping-cart (1).png" width="80" />
+                                    <p class="text-muted mt-2">Không có sản phẩm nào</p>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                    <div class="checkout-section mt-4 border-0 shadow-sm bg-white p-3">
+                        <h4 class="section-title">Tóm tắt đơn hàng</h4>
+                        <div class="summary-line">
+                            <span>Tổng tiền hàng</span>
+                            <span>@ViewBag.TongTien.ToString("N0")đ</span>
+                        </div>
+                        <div class="summary-line">
+                            <span>Phí vận chuyển</span>
+                            <span>Miễn phí</span>
+                        </div>
+                        <hr />
+                        <div class="summary-line total">
+                            <span>Tổng thanh toán</span>
+                            <span class="total-price">@ViewBag.TongTien.ToString("N0")đ</span>
+                        </div>
+                        <button type="submit" class="btn-order-final @(gioHang?.Any() == true ? "" : "disabled")">
+                            ĐẶT HÀNG
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>

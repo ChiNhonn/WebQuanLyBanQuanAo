@@ -1,0 +1,38 @@
+﻿<h2>Chi tiết đơn hàng #@ViewBag.MaDonHang</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Tên sản phẩm</th>
+            <th>Số lượng</th>
+            <th>Giá</th>
+            <th>Màu</th>
+            <th>Size</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (ViewBag.ChiTietList != null)
+        {
+            foreach (var item in ViewBag.ChiTietList)
+            {
+                <tr>
+                    <td>@item.TenSP</td>
+                    <td>@item.SoLuong</td>
+                    <td>@item.Gia.ToString("N0") đ</td>
+                    <td>@item.Mau</td>
+                    <td>@item.Size</td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="5">Không có dữ liệu</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-controller="QuanLySP" asp-action="Index" class="btn btn-secondary">
+    Quay lại
+</a>

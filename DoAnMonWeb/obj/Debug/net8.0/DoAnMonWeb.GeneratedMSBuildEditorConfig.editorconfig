@@ -1,0 +1,145 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = DoAnMonWeb
+build_property.RootNamespace = DoAnMonWeb
+build_property.ProjectDir = C:\Users\ADMIN\source\repos\DoAnMonWeb\DoAnMonWeb\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\ADMIN\source\repos\DoAnMonWeb\DoAnMonWeb
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/ADMIN/source/repos/DoAnMonWeb/DoAnMonWeb/Views/DiaChi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlhQ2hpXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/source/repos/DoAnMonWeb/DoAnMonWeb/Views/DonHang/ChiTiet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uSGFuZ1xDaGlUaWV0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/source/repos/DoAnMonWeb/DoAnMonWeb/Views/DonHang/DatHang.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uSGFuZ1xEYXRIYW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/source/repos/DoAnMonWeb/DoAnMonWeb/Views/DonHang/DatHangThanhCong.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uSGFuZ1xEYXRIYW5nVGhhbmhDb25nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/source/repos/DoAnMonWeb/DoAnMonWeb/Views/GioHang/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lvSGFuZ1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/source/repos/DoAnMonWeb/DoAnMonWeb/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/source/repos/DoAnMonWeb/DoAnMonWeb/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/source/repos/DoAnMonWeb/DoAnMonWeb/Views/QuanLyDonHang/ChiTiet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVhbkx5RG9uSGFuZ1xDaGlUaWV0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/source/repos/DoAnMonWeb/DoAnMonWeb/Views/QuanLyKichCo/SuaKC.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVhbkx5S2ljaENvXFN1YUtDLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/source/repos/DoAnMonWeb/DoAnMonWeb/Views/QuanLyKichCo/ThemKC.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVhbkx5S2ljaENvXFRoZW1LQy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/source/repos/DoAnMonWeb/DoAnMonWeb/Views/QuanLyLSP/SuaLSP.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVhbkx5TFNQXFN1YUxTUC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/source/repos/DoAnMonWeb/DoAnMonWeb/Views/QuanLyLSP/ThemLSP.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVhbkx5TFNQXFRoZW1MU1AuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/source/repos/DoAnMonWeb/DoAnMonWeb/Views/QuanLyMauSac/SuaMS.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVhbkx5TWF1U2FjXFN1YU1TLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/source/repos/DoAnMonWeb/DoAnMonWeb/Views/QuanLyMauSac/ThemMS.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVhbkx5TWF1U2FjXFRoZW1NUy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/source/repos/DoAnMonWeb/DoAnMonWeb/Views/QuanLySP/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVhbkx5U1BcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/source/repos/DoAnMonWeb/DoAnMonWeb/Views/QuanLySP/SuaSP.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVhbkx5U1BcU3VhU1AuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/source/repos/DoAnMonWeb/DoAnMonWeb/Views/QuanLySP/ThemSP.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVhbkx5U1BcVGhlbVNQLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/source/repos/DoAnMonWeb/DoAnMonWeb/Views/QuanLyTaiKhoan/ChiTietTK.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVhbkx5VGFpS2hvYW5cQ2hpVGlldFRLLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/source/repos/DoAnMonWeb/DoAnMonWeb/Views/SanPham/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FuUGhhbVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/source/repos/DoAnMonWeb/DoAnMonWeb/Views/SanPham/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FuUGhhbVxTZWFyY2guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/source/repos/DoAnMonWeb/DoAnMonWeb/Views/Shared/Components/GioHang/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcR2lvSGFuZ1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/source/repos/DoAnMonWeb/DoAnMonWeb/Views/Shared/Components/YeuThich/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcWWV1VGhpY2hcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/source/repos/DoAnMonWeb/DoAnMonWeb/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/source/repos/DoAnMonWeb/DoAnMonWeb/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/source/repos/DoAnMonWeb/DoAnMonWeb/Views/TaiKhoan/DangKy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpS2hvYW5cRGFuZ0t5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/source/repos/DoAnMonWeb/DoAnMonWeb/Views/TaiKhoan/DangNhap.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpS2hvYW5cRGFuZ05oYXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/source/repos/DoAnMonWeb/DoAnMonWeb/Views/TaiKhoan/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpS2hvYW5cRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/source/repos/DoAnMonWeb/DoAnMonWeb/Views/YeuThich/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWWV1VGhpY2hcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/source/repos/DoAnMonWeb/DoAnMonWeb/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/source/repos/DoAnMonWeb/DoAnMonWeb/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/source/repos/DoAnMonWeb/DoAnMonWeb/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-uckjc3ceun

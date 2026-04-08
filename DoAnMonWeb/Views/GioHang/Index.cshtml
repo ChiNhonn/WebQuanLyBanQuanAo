@@ -1,0 +1,79 @@
+﻿@model List<DoAnMonWeb.Models.GioHangItem>
+@if (TempData["Success"] != null)
+{
+    <div class="alert-success">
+        @TempData["Success"]
+    </div>
+}
+@{
+	Layout = "_Layout";
+	ViewData["Title"] = "Vị trí cửa hàng";
+}
+<link rel="stylesheet" href="~/css/giohang.css" asp-append-version="true" />
+<section>
+	<div class="container__giohang">
+		<div class="header__trangchu">
+			<a asp-controller="SanPham" asp-action="Index">
+				Trang chủ
+			</a>
+		</div>
+		<p>/</p>
+		<div class="header__giohang">
+			Giỏ hàng
+		</div>
+	</div>
+</section>
+
+<section class="cart__container">
+    <div class="cart__header">
+        <h1>Giỏ hàng của bạn</h1>
+        <p>Có @Model.Sum(x => x.SoLuong) sản phẩm trong giỏ hàng</p>
+        <div class="underline"></div>
+    </div>
+
+    <div class="cart__content">
+        <div class="cart__left">
+            @foreach (var item in Model)
+            {
+                <div class="cart-item">
+                    <div class="item-img">
+                        <img src="~/images/QuanAo/@item.HinhAnh" alt="@item.TenSP">
+                    </div>
+                    <div class="item-info">
+                        <div class="item__title__row">
+                            <h3>@item.TenSP (@item.Size)</h3>
+                            <a href="@Url.Action("XoaSanPham", "GioHang", new { id = item.MaSP, size = item.Size })" class="remove-btn">×</a>
+                        </div>
+                        <div class="item__price__row">
+                            <span class="price">@item.Gia.ToString("N0")đ</span>
+
+                            <div class="quantity__select">
+                                <a href="@Url.Action("GiamSoLuong", "GioHang", new { id = item.MaSP, size = item.Size })" class="btn-qty">-</a>
+
+                                <input type="text" value="@item.SoLuong" readonly>
+
+                                <a href="@Url.Action("TangSoLuong", "GioHang", new { id = item.MaSP, size = item.Size })" class="btn-qty">+</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+
+            <div class="cart__note">
+                <label>Ghi chú đơn hàng</label>
+                <textarea placeholder="Ghi chú"></textarea>
+            </div>
+        </div>
+
+        <div class="cart__right">
+            <div class="summary__row">
+                <span>Tổng tiền:</span>
+                <span class="total__price">@Model.Sum(x => x.ThanhTien).ToString("N0")đ</span>
+            </div>
+            <a asp-controller="DonHang" asp-action="DatHang" class="btn__checkout">
+                THANH TOÁN
+            </a>
+            <a href="/" class="continue-shopping">← Tiếp tục mua hàng</a>
+        </div>
+    </div>
+</section>

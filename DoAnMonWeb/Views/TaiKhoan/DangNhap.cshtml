@@ -1,0 +1,35 @@
+﻿@model TaiKhoan
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        @TempData["Success"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+<link rel="stylesheet" href="~/css/dangnhap.css" asp-append-version="true" />
+
+<div class="container__login">
+    <div class="login__content shadow-lg">
+        <div class="login__header">
+            <h2 class="login-fontsize-h2">Đăng nhập</h2>
+            <h3 class="login-fontsize-h3">Chào mừng bạn quay trở lại</h3>
+        </div>
+
+        <form class="login-form" asp-controller="TaiKhoan" asp-action="DangNhap" method="post">
+            <div class="input-group-custom">
+                <input asp-for="Ten" placeholder="Tên đăng nhập" required />
+            </div>
+            <div class="input-group-custom">
+                <input type="password" asp-for="MatKhau" placeholder="Mật khẩu" required />
+            </div>
+            <button type="submit" class="btn-login">ĐĂNG NHẬP</button>
+        </form>
+
+        <div class="login__footer">
+            <p class="login-fontsize-p">Chưa có tài khoản? <a asp-controller="TaiKhoan" asp-action="DangKy" class="link-highlight">Đăng ký ngay</a></p>
+            <p class="login-fontsize-p"><a asp-action="QuenMatKhau" class="link-forgot">Quên mật khẩu?</a></p>
+        </div>
+    </div>
+</div>

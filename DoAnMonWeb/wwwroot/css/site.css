@@ -1,0 +1,81 @@
+﻿html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+}
+
+.user-menu-container {
+    position: relative;
+}
+
+.user-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: -30px;
+    width: 220px;
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    padding: 15px;
+    z-index: 9999;
+    color: black;
+    text-align: left;
+}
+.user-menu-container:hover .user-dropdown {
+    display: block;
+}
+
+.icon-link:hover .user-dropdown {
+    display: block;
+}
+
+.dropdown-header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.dropdown-header p {
+    margin: 0;
+    font-size: 12px;
+    color: #888;
+}
+
+.dropdown-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-list li {
+    padding: 8px 0;
+}
+
+.dropdown-list li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    display: block;
+    transition: 0.3s;
+}
+
+.dropdown-list li a:hover {
+    color: #ff0000; 
+    padding-left: 5px;
+}

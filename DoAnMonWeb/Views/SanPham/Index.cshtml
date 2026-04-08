@@ -1,0 +1,175 @@
+﻿@model List<DoAnMonWeb.Models.SanPham>
+@if(TempData["Success"] != null)
+{
+    <div class="alert-success">
+        @TempData["Success"]
+    </div>
+}
+@{
+	Layout = "_Layout";
+	ViewData["Title"] = "Trang chủ";
+}
+<link rel="stylesheet" href="~/css/animation.css"/>
+<section>
+	<div class="container-body">
+		<div class="first-content">
+			<img src="~/images/quanao/background-fashion.jpg" alt="background" />
+		</div>
+		<br />
+		<div class="second-content">
+			<button class="btn__previous" onclick="moveSlide(-1)"><img src="~/images/icon/rewind-button.png" alt ="pre-icon" width="30"/></button>
+			<div class="rotation__window">
+				<div class="container__review__quanao" id="slider">
+					<div class="product-item">
+						<a asp-controller="SanPham" asp-action="Search" asp-route-search="Áo Khoác">
+							<img class="img__review" src="~/images/quanao/aokhoac-daden.jpg" alt="Áo khoác" />
+						</a>
+						<p>Áo Khoác</p>
+					</div>
+					<div class ="product-item">
+						<a asp-controller="SanPham" asp-action="Search" asp-route-search="Áo Polo">
+							<img class="img__review" src="~/images/quanao/ao-polp-den1.png" alt="Áo Polo" />
+						</a>
+						<p>Áo polo</p>
+					</div>
+					<div class="product-item">
+						<a asp-controller="SanPham" asp-action="Search" asp-route-search="Sơ mi tay dài">
+							<img class="img__review" src="~/images/quanao/ao-somi-taydai-trang1.png" alt="Áo sơ mi tay dài" />
+						</a>
+						<p>Áo sơ mi tay dài</p>
+					</div>
+					<div class="product-item">
+						<a asp-controller="SanPham" asp-action="Search" asp-route-search="Sơ mi tay ngắn">
+							<img class="img__review" src="~/images/quanao/ao-somi-taingan-trang1.png" alt="Áo sơ mi tay ngắn" />
+						</a>
+						<p>Áo sơ mi tay ngắn</p>
+					</div>
+					<div class="product-item">
+						<a asp-controller="SanPham" asp-action="Search" asp-route-search="Bộ Vest">
+							<img class="img__review" src="~/images/quanao/bovest-den.jpg" alt="Bộ vest" />
+						</a>
+						<p>Bộ Vest</p>
+					</div>
+					<div class="product-item">
+						<a asp-controller="SanPham" asp-action="Search" asp-route-search="Quần Tây">
+							<img class="img__review" src="~/images/quanao/quan-tay-den.jpg" alt="Quần tây" />
+						</a>
+						<p>Quần tây</p>
+					</div>
+					<div class="product-item">
+						<a asp-controller="SanPham" asp-action="Search" asp-route-search="Quần Jean">
+							<img class="img__review" src="~/images/quanao/quan-jean-den.png" alt="Quần jean " />
+						</a>
+						<p>Quần jean</p>
+					</div>
+					<div class="product-item">
+						<a asp-controller="SanPham" asp-action="Search" asp-route-search="Quần Short">
+							<img class="img__review" src="~/images/quanao/quan-ngan-den.jpg" alt="Quần ngắn" />
+						</a>
+						<p>Quần ngắn</p>
+					</div>
+					<div class="product-item">
+						<a asp-controller="SanPham" asp-action="Search" asp-route-search="Thắt Lưng">
+							<img class="img__review" src="~/images/quanao/thatlung1.jpg" alt="Phụ kiện" />
+						</a>
+						<p>Thắt lưng</p>
+					</div>
+					<div class="product-item">
+						<a asp-controller="SanPham" asp-action="Search" asp-route-search="Tất">
+							<img class="img__review" src="~/images/quanao/tat1.png" alt="Phụ kiện"/>
+						</a>
+						<p>Tất</p>
+					</div>
+					<div class="product-item">
+						<a asp-controller="SanPham" asp-action="Search" asp-route-search="Giày Da" >
+							<img class="img__review" src="~/images/quanao/giayda1.jpg" alt="Phụ kiện"/>
+						</a>
+						<p>Giày da</p>
+					</div>
+				</div>
+			</div>
+			<button class="btn__next" onclick="moveSlide(1)"><img src="~/images/icon/forward.png" alt="next-icon" width="30"/></button>
+		</div>
+		<div class="third-content">
+			<div class="container__third__content">
+				<div class="fashion-item fashion-work">
+					<img src="~/images/quanao/thoitrangcongso.jpg" />
+					<div class="fashion-content">
+						<p>THỜI TRANG CÔNG SỞ </P>
+						<a class="btn-discover" asp-controller="SanPham" asp-action="Search" asp-route-search="Sơ Mi, Quần tây">
+							KHÁM PHÁ NGAY
+						</a>
+					</div>
+				</div>
+				<div class="fashion-item fashion-daily">
+					<img src="~/images/quanao/thoitranghangngay.jpg" />
+					<div class="fashion-content">
+						<p>THỜI TRANG HÀNG NGÀY</p>
+						<a class="btn-discover" asp-controller="SanPham" asp-action="Search" asp-route-search="Áo PoLo, Quần Short, Quần Jean">
+							KHÁM PHÁ NGAY
+						</a>					
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="last-content">
+			<div class="container__last__content">
+				<h1 class="header--sanpham">Sản Phẩm Tham Khảo</h1>
+				<div class="container__sanpham slider-top">
+					<div class="slider-track">
+						@foreach (var sp in Model)
+						{
+							<div class="anh-link">
+								<img class="anh anh-default" src="~/images/quanao/@sp.HinhAnh" />
+								<div class="size-overlay">
+									<div class="size-header-row">
+										<p class="size-title">Thêm nhanh vào giỏ hàng +</p>
+										<a href="@Url.Action("ThemYeuThich", "YeuThich", new { id = sp.MaSP })" class="btn-heart">
+											<img src="~/images/icon/heart (1).png" alt="Yêu thích" />
+										</a>
+									</div>									
+									<div class="size-options">
+										<a href="@Url.Action("ThemGioHang", "GioHang", new { id = sp.MaSP, size = "S" })" class="btn-size">S</a>
+										<a href="@Url.Action("ThemGioHang", "GioHang", new { id = sp.MaSP, size = "M" })" class="btn-size">M</a>
+										<a href="@Url.Action("ThemGioHang", "GioHang", new { id = sp.MaSP, size = "L" })" class="btn-size">L</a>
+										<a href="@Url.Action("ThemGioHang", "GioHang", new { id = sp.MaSP, size = "XL" })" class="btn-size">XL</a>
+										<a href="@Url.Action("ThemGioHang", "GioHang", new { id = sp.MaSP, size = "XXL" })" class="btn-size">XXL</a>
+									</div>
+								</div>
+							</div>
+						}
+					</div>				
+				</div>
+				<div class="container__sanpham slider-bot">
+					<div class="slider-track">
+						@foreach (var sp in Model)
+						{
+							<div class="anh-link">
+								<img class="anh anh-default" src="~/images/quanao/@sp.HinhAnh" />
+								<div class="size-overlay">
+									<div class="size-header-row">
+										<p class="size-title">Thêm nhanh vào giỏ hàng +</p>
+										<a href="@Url.Action("ThemYeuThich", "YeuThich", new { id = sp.MaSP })" class="btn-heart">
+											<img src="~/images/icon/heart (1).png" alt="Yêu thích" />
+										</a>
+									</div>									
+									<div class="size-options">
+										<a href="@Url.Action("ThemGioHang", "GioHang", new { id = sp.MaSP, size = "S" })" class="btn-size">S</a>
+										<a href="@Url.Action("ThemGioHang", "GioHang", new { id = sp.MaSP, size = "M" })" class="btn-size">M</a>
+										<a href="@Url.Action("ThemGioHang", "GioHang", new { id = sp.MaSP, size = "L" })" class="btn-size">L</a>
+										<a href="@Url.Action("ThemGioHang", "GioHang", new { id = sp.MaSP, size = "XL" })" class="btn-size">XL</a>
+										<a href="@Url.Action("ThemGioHang", "GioHang", new { id = sp.MaSP, size = "XXL" })" class="btn-size">XXL</a>
+									</div>
+								</div>
+							</div>
+						}
+					</div>				
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+@section LoginFormJS {
+	<script src="~/js/loginForm.js" defer></script>
+}
+<script src="~/js/moveSilde.js" defer></script>

@@ -1,0 +1,123 @@
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - DoAnMonWeb</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/DoAnMonWeb.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/dangnhap.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/diachi.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/search.css" asp-append-version="true"/>
+	<link rel="stylesheet" href="~/css/giohang.css" asp-append-version="true" />
+	<link href="~/css/quanlysp.css" rel="stylesheet" asp-append-version="true" />
+	<link href="~/css/dashboardlogin.css" rel="stylesheet" asp-append-version="true" />
+	<link href="~/css/yeuthich.css" rel="stylesheet" asp-append-version="true"/>
+	<link rel="stylesheet" href="~/css/sanpham.css" asp-append-version="true" />
+</head>
+<body>
+	<header>
+		<div class="container-fluid header__container">
+			<div class="header__columns__left">
+				LOGO
+			</div>
+			<div class="header__columns__center">
+				<form asp-controller="SanPham" asp-action="Search" method="get" class="search-box">
+					<input type="text" name="search" placeholder="Tìm sản phẩm..." value="@ViewBag.Keyword" />
+					<button type="submit" class="btn-search">
+						<img class="search" src="/images/icon/transparency.png" alt="icon-search" />
+					</button>
+				</form>
+			</div>
+			<div class="header__columns__right">
+				<div>
+					<a class="icon-link" asp-controller="DiaChi" asp-action="Index">
+						<img class="icon icon-default" alt="icon-address" src="~/images/icon/location-white.png" />
+						<img class="icon icon-hover" src="~/images/icon/pin.png" />
+					</a>
+				</div>
+                <div class="formlogin">
+                    <div class="icon-link user-menu-container">
+                        <img class="icon icon-default" alt="icon-login" src="~/images/icon/user-white -.png" />
+                        <img id="icon-hienform" class="icon icon-hover" src="~/images/icon/user.png" />
+                        @{
+                            var maTK = HttpContextAccessor.HttpContext.Session.GetInt32("MaTK");
+                            var fullName = HttpContextAccessor.HttpContext.Session.GetString("FullName");
+                        }
+
+                        @if (maTK != null)
+                        {
+                            <div id="UserDropdown" class="user-dropdown">
+                                <div class="dropdown-header">
+                                    <p>XIN CHÀO</p>
+                                    <strong>@fullName</strong>
+                                </div>
+                                <hr />
+                                <ul class="dropdown-list">
+                                    <li><a asp-controller="TaiKhoan" asp-action="DashboardLogin">Tài khoản của tôi</a></li>
+                                    <li><a asp-controller="TaiKhoan" asp-action="DangXuat" onclick="return confirm('Bạn muốn đăng xuất?')">Đăng xuất</a></li>
+                                </ul>
+                            </div>
+                        }
+                        else
+                        {
+                            <div id="LoginDropdown" class="user-dropdown">
+                                <div class="dropdown-header">
+                                    <p>ĐĂNG NHẬP HỆ THỐNG</p>
+                                </div>
+                                <hr />
+                                <form asp-controller="TaiKhoan" asp-action="DangNhap" method="post" class="p-3">
+                                    <div class="mb-3">
+                                        <input name="Ten" type="text" class="form-control" placeholder="Tên đăng nhập" required />
+                                    </div>
+                                    <div class="mb-3">
+                                        <input name="MatKhau" type="password" class="form-control" placeholder="Mật khẩu" required />
+                                    </div>
+                                    <button type="submit" class="btn btn-dark w-100">ĐĂNG NHẬP</button>
+                                    <div class="mt-2 text-center">
+                                        <a href="@Url.Action("DangKy", "TaiKhoan")" style="font-size: 12px; text-decoration: none; color: #007bff;">Chưa có tài khoản? Đăng ký ngay</a>
+                                    </div>
+                                </form>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <div>
+					<a class="icon-link" asp-controller="YeuThich" asp-action="Index">
+						<img class="icon icon-default" alt="icon-yeuthich" src="~/images/icon/heart-white.png" />
+						<img class="icon icon-hover" src="~/images/icon/heart (1).png" />
+						@await Component.InvokeAsync("YeuThich")
+					</a>
+				</div>
+				<div>
+					<a class="icon-link" asp-controller="GioHang" asp-action="Index">
+						<img class="icon icon-default" alt="icon-giohang" src="~/images/icon/cart-white.png" />
+						<img class="icon icon-hover" src="~/images/icon/shopping-cart.png" />
+						@await Component.InvokeAsync("GioHang")
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+    <div class="container-fluid">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <footer>
+        <div class="container__footer">
+			<h3>Địa chỉ: 18 Tống Hữu Định, Thảo Điền, Quận2, HCM </h3>
+			<h4>Số điện thoại liên hệ: 0xxxxxxxxx</h4>
+			<h5>Email liên hệ: duongtrinhan00@gmailcom</h5>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+    @RenderSection("LoginFormJS", required: false)
+</body>
+</html>

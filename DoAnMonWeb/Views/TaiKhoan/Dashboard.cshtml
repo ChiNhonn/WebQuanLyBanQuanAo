@@ -1,0 +1,303 @@
+﻿@model DoAnMonWeb.Models.TaiKhoan
+@using DoAnMonWeb.Models
+@if (TempData["Success"] != null)
+{
+	<div class="alert alert-success">@TempData["Success"]</div>
+}
+
+@if (TempData["Error"] != null)
+{
+	<div class="alert alert-danger">@TempData["Error"]</div>
+}
+<script src="/js/changeBtn.js" asp-append-version="true" defer></script>
+<link rel="stylesheet" href="~/css/dashboardLogin.css" />
+<section>
+	<div class="container__dangky__dashboard">
+		<div class="header__trangchu">
+			<a asp-controller="SanPham" asp-action="Index">
+				Trang chủ
+			</a>
+		</div>
+		<p>/</p>
+		<div class="header__dashboard">
+			Tài Khoản
+		</div>
+	</div>
+</section>
+<section class="container__db__outsite">
+	<div class="container__db">
+		<div class="container__db_left">
+			<div class="header__db">
+				<h1 class="db-h1-fullname">@ViewBag.FullName</h1>
+				<h2 class="db-h2-email">@ViewBag.Email</h2>
+			</div>
+			<div class="btn-db">
+				<button class="nut inf">
+					Thông tin cá nhân
+				</button>
+				<button class="nut donhang">
+					Đơn hàng của bạn
+				</button>
+				<button class="nut yeuthich">
+					Sản phẩm yêu thích
+				</button>
+				<button class="nut diachi">
+					Địa chỉ giao hàng
+				</button>
+				<button class="nut out">
+					Đăng xuất
+				</button>
+			</div>
+		</div>
+		<div class="container__db_right">
+			<div class="tab-content thongtin">
+				<h2 class="thongtintaikhoan">Thông tin tài khoản</h2>
+				<form asp-controller="TaiKhoan" asp-action="CapNhatTK" method="post">
+					<input type="hidden" name="MaTK" value="@ViewBag.MaTK" />
+
+					<div class="form-group">
+						<label>Tên đăng nhập</label>
+						<input type="text" name="Ten" value="@ViewBag.Ten" placeholder="Tên đăng nhập" readonly />
+					</div>
+
+					<div class="form-group">
+						<label>Họ và tên</label>
+						<input type="text" name="FullName" value="@ViewBag.FullName" placeholder="Họ và tên" />
+					</div>
+
+					<div class="form-group">
+						<label>Giới tính</label>
+						<div class="radio-group">
+							<input type="radio" name="GioiTinh" id="nam" value="Nam" @(ViewBag.GioiTinh == "Nam" ? "checked" : "") /> <label for="nam">Nam</label>
+							<input type="radio" name="GioiTinh" id="nu" value="Nu" @(ViewBag.GioiTinh == "Nu" ? "checked" : "") /> <label for="nu">Nữ</label>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label>Email</label>
+						<input type="email" name="Email" value="@ViewBag.Email" placeholder="Email" />
+					</div>
+
+					<div class="form-group">
+						<label>Số điện thoại</label>
+						<input type="text" name="Sdt" value="@ViewBag.Sdt" placeholder="Nhập số điện thoại" />
+					</div>
+
+					<div class="form-submit">
+						<button type="submit" class="btn-update">Cập nhật</button>
+					</div>
+				</form>
+			</div>
+			<div class="tab-content donhang is-che">
+				<h2 class="thongtintaikhoan">Lịch sử đơn hàng của bạn</h2>
+
+				@if (ViewBag.DanhSachDonHang != null && ((List<DonHang>)ViewBag.DanhSachDonHang).Count > 0)
+				{
+					<div class="table-container-donhang">
+						<table class="db-table">
+							<thead>
+								<tr>
+									<th>Mã đơn</th>
+									<th>Ngày đặt</th>
+									<th>Thanh toán</th>
+									<th>Trạng thái</th>
+									<th>Tổng tiền</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								@foreach (var item in (List<DonHang>)ViewBag.DanhSachDonHang)
+								{
+									<tr>
+										<td class="id-order">#@item.MaDonHang</td>
+										<td>@(item.NgayDat.HasValue? item.NgayDat.Value.ToString("dd/MM/yyyy") : "---")</td>
+										<td>@item.PhuongThucThanhToan</td>
+										<td>
+											<span class="badge-status" data-status="@item.TrangThai">
+												@item.TrangThai
+											</span>
+										</td>
+										<td class="total-price">@item.TongTien.ToString("N0") đ</td>
+										<td>
+											<a href="@Url.Action("ChiTiet", "DonHang", new { id = item.MaDonHang })" class="btn-view">
+												Chi tiết
+											</a>
+										</td>
+									</tr>
+								}
+							</tbody>
+						</table>
+					</div>
+				}
+				else
+				{
+					<div class="no-order">
+						<p>Bạn chưa có đơn hàng nào tại cửa hàng.</p>
+						<a asp-controller="SanPham" asp-action="Index" class="btn-go-shopping">Mua sắm ngay</a>
+					</div>
+				}
+			</div>
+			<div class="tab-content yeuthich is-che">
+				<h2 class="thongtintaikhoan">Sản phẩm yêu thích</h2>
+
+				@if (ViewBag.DanhSachYeuThich != null && ((List<YeuThichItem>)ViewBag.DanhSachYeuThich).Count > 0)
+				{
+					<div class="table-container-donhang">
+						<table class="db-table">
+							<thead>
+								<tr>
+									<th>Hình ảnh</th>
+									<th>Tên sản phẩm</th>
+									<th>Giá</th>
+									<th>Hành động</th>
+								</tr>
+							</thead>
+							<tbody>
+								@foreach (var item in (List<YeuThichItem>)ViewBag.DanhSachYeuThich)
+								{
+									<tr>
+										<td><img src="~/images/QuanAo/@item.HinhAnh" width="60" /></td>
+										<td>@item.TenSP</td>
+										<td class="total-price">@item.Gia.ToString("N0") đ</td>
+										<td>
+											<a asp-controller="SanPham" asp-action="ChiTiet" asp-route-id="@item.MaSP" class="btn-view">Mua ngay</a>
+											<a asp-controller="YeuThich" asp-action="XoaYeuThich" asp-route-id="@item.MaSP" class="btn-view" style="color:red">Xóa</a>
+										</td>
+									</tr>
+								}
+							</tbody>
+						</table>
+					</div>
+				}
+				else
+				{
+					<p>Bạn chưa có sản phẩm yêu thích nào.</p>
+				}
+			</div>
+			<div class="tab-content diachi is-che">
+				<h2 class="thongtintaikhoan">Địa chỉ giao hàng</h2>
+
+				<div id="addr-list-view">
+					<div class="addr-list-container">
+						@if (ViewBag.DanhSachDiaChi != null)
+						{
+							@foreach (var item in (List<DiaChi>)ViewBag.DanhSachDiaChi)
+							{
+								<div class="addr-card-item">
+									<a href="javascript:void(0)" class="addr-edit-btn"
+									   onclick="showEditForm('@item.MaDiaChi', '@item.HoTen', '@item.Sdt', '@item.DiaChiChiTiet', '@item.LoaiDiaChi', '@item.IsDefault.ToString().ToLower()')">
+										<img src="~/images/icon/edit.png" style="width: 20px;" />
+									</a>
+
+									<div class="addr-row">
+										<div class="addr-icon-col"><img src="~/images/icon/avatar.png" class="img-icon-item" /></div>
+										<div class="addr-text-col">
+											<span class="addr-name">@item.HoTen</span>
+											@if (item.IsDefault)
+											{
+												<img src="~/images/icon/check-mark.png" style="width:20px"/>
+												<span class="addr-default-tag">Địa chỉ mặc định</span>
+											}
+										</div>
+									</div>
+									<div class="addr-row">
+										<div class="addr-icon-col"><img src="~/images/icon/home-icon-silhouette.png" class="img-icon-item" /></div>
+										<div class="addr-text-col"><span>@item.DiaChiChiTiet (@item.LoaiDiaChi)</span></div>
+									</div>
+									<div class="addr-row">
+										<div class="addr-icon-col"><img src="~/images/icon/phone-call.png" class="img-icon-item" /></div>
+										<div class="addr-text-col"><span>@item.Sdt</span></div>
+									</div>
+								</div>
+							}
+						}
+					</div>
+					<button class="btn-add-full-black" onclick="showAddForm()">
+						Bổ sung địa chỉ <span class="plus-icon-circle">+</span>
+					</button>
+				</div>
+				<div id="addr-add-view" style="display: none;">
+					<div class="addr-form-container-inline">
+						<a href="javascript:void(0)" onclick="hideAddForm()" class="addr-back-btn">
+							<img src="~/images/icon/left.png" style="width:20px;" />
+						</a>
+
+						<form asp-controller="DiaChi" asp-action="Them" method="post">
+							<div class="form-group-custom">
+								<label>Họ và tên</label>
+								<input type="text" name="Hovaten" class="input-flat" placeholder="Họ và tên" />
+							</div>
+							<div class="form-group-custom">
+								<label>Địa chỉ</label>
+								<input type="text" name="DiaChiChiTiet" class="input-flat" placeholder="Địa chỉ" />
+							</div>
+							<div class="form-group-custom">
+								<label>Tỉnh thành</label>
+								<select name="LoaiDiaChi" class="input-flat">
+									<option value="Nhà riêng">Nhà riêng</option>
+									<option value="Công ty">Công ty</option>
+									<option value="Khác">Khác</option>
+								</select>
+							</div>
+							<div class="form-group-custom">
+								<label>Số điện thoại</label>
+								<input type="text" name="Sdt" class="input-flat" placeholder="Số điện thoại" />
+							</div>
+							<div class="form-group-custom checkbox-row">
+								<input type="checkbox" name="IsDefault" id="add-IsDefault" value="true" />
+								<label for="add-IsDefault">Đặt làm địa chỉ mặc định.</label>
+							</div>
+							<div class="form-submit-center">
+								<button type="submit" class="btn-update-red">Thêm mới</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div id="addr-edit-view" style="display: none;">
+					<div class="addr-form-container-inline">
+						<a href="javascript:void(0)" onclick="hideEditForm()" class="addr-back-btn">
+							<img src="~/images/icon/left.png" style="width:20px;" />
+						</a>
+
+						<form asp-controller="DiaChi" asp-action="CapNhap" method="post">
+							<input type="hidden" name="MaDiaChi" id="edit-MaDiaChi" />
+
+							<div class="form-group-custom">
+								<label>Họ và Tên</label>
+								<input type="text" name="HoTen" id="edit-HoTen" class="input-flat" />
+							</div>
+
+							<div class="form-group-custom">
+								<label>Số điện thoại</label>
+								<input type="text" name="Sdt" id="edit-Sdt" class="input-flat" />
+							</div>
+
+							<div class="form-group-custom">
+								<label>Địa chỉ</label>
+								<input type="text" name="DiaChiChiTiet" id="edit-DiaChi" class="input-flat" />
+							</div>
+
+							<div class="form-group-custom">
+								<label>Loại Địa Chỉ</label>
+								<select name="LoaiDiaChi" id="edit-TinhThanh" class="input-flat">
+									<option value="Nhà riêng">Nhà riêng</option>
+									<option value="Công ty">Công ty</option>
+									<option value="Khác">Khác</option>
+								</select>
+							</div>
+
+							<div class="form-group-custom checkbox-row">
+								<input type="checkbox" name="IsDefault" id="edit-IsDefault" value="true" />
+								<label for="edit-IsDefault">Đặt làm địa chỉ mặc định</label>
+							</div>
+
+							<div class="form-submit-center">
+								<button type="submit" class="btn-update-red">Cập nhật</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

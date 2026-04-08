@@ -1,0 +1,94 @@
+﻿.main-address-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.container__address {
+    padding: 20px 5%;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.header__trangchu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.divider {
+    margin: 0 15px;
+    color: #ccc;
+}
+
+.header__vitri {
+    color: #888;
+}
+
+.address-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.address-header h2 {
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.line-deco {
+    width: 80px;
+    height: 4px;
+    background: #000;
+    margin: 0 auto;
+}
+
+.address-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    gap: 40px;
+    align-items: start;
+}
+
+.address-info {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.info-item {
+    display: flex;
+    margin-bottom: 25px;
+    align-items: flex-start;
+}
+
+.info-item h4 {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.info-item p {
+    margin: 0;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.gg__map {
+    width: 100%;
+    height: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+.gg__map iframe {
+    width: 100%;
+    height: 100%;
+}

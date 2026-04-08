@@ -1,0 +1,446 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|c:\\users\\admin\\source\\repos\\doanmonweb\\doanmonweb\\controllers\\donhangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|solutionrelative:doanmonweb\\controllers\\donhangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|c:\\users\\admin\\source\\repos\\doanmonweb\\doanmonweb\\models\\donhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|solutionrelative:doanmonweb\\models\\donhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|c:\\users\\admin\\source\\repos\\doanmonweb\\doanmonweb\\views\\quanlysp\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|solutionrelative:doanmonweb\\views\\quanlysp\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|c:\\users\\admin\\source\\repos\\doanmonweb\\doanmonweb\\wwwroot\\css\\quanlysp.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|solutionrelative:doanmonweb\\wwwroot\\css\\quanlysp.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|c:\\users\\admin\\source\\repos\\doanmonweb\\doanmonweb\\controllers\\quanlyspcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|solutionrelative:doanmonweb\\controllers\\quanlyspcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|c:\\users\\admin\\source\\repos\\doanmonweb\\doanmonweb\\views\\donhang\\dathangthanhcong.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|solutionrelative:doanmonweb\\views\\donhang\\dathangthanhcong.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|c:\\users\\admin\\source\\repos\\doanmonweb\\doanmonweb\\views\\donhang\\dathang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|solutionrelative:doanmonweb\\views\\donhang\\dathang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|c:\\users\\admin\\source\\repos\\doanmonweb\\doanmonweb\\models\\vnpaylibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|solutionrelative:doanmonweb\\models\\vnpaylibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|c:\\users\\admin\\source\\repos\\doanmonweb\\doanmonweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|solutionrelative:doanmonweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|c:\\users\\admin\\source\\repos\\doanmonweb\\doanmonweb\\views\\taikhoan\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|solutionrelative:doanmonweb\\views\\taikhoan\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|c:\\users\\admin\\source\\repos\\doanmonweb\\doanmonweb\\views\\taikhoan\\dangnhap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|solutionrelative:doanmonweb\\views\\taikhoan\\dangnhap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|c:\\users\\admin\\source\\repos\\doanmonweb\\doanmonweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|solutionrelative:doanmonweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|c:\\users\\admin\\source\\repos\\doanmonweb\\doanmonweb\\controllers\\diachicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|solutionrelative:doanmonweb\\controllers\\diachicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|c:\\users\\admin\\source\\repos\\doanmonweb\\doanmonweb\\views\\diachi\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|solutionrelative:doanmonweb\\views\\diachi\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|c:\\users\\admin\\source\\repos\\doanmonweb\\doanmonweb\\views\\giohang\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|solutionrelative:doanmonweb\\views\\giohang\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|c:\\users\\admin\\source\\repos\\doanmonweb\\doanmonweb\\wwwroot\\css\\giohang.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|solutionrelative:doanmonweb\\wwwroot\\css\\giohang.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|c:\\users\\admin\\source\\repos\\doanmonweb\\doanmonweb\\controllers\\giohangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|solutionrelative:doanmonweb\\controllers\\giohangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|c:\\users\\admin\\source\\repos\\doanmonweb\\doanmonweb\\viewcomponent\\yeuthichviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|solutionrelative:doanmonweb\\viewcomponent\\yeuthichviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|c:\\users\\admin\\source\\repos\\doanmonweb\\doanmonweb\\models\\yeuthich.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|solutionrelative:doanmonweb\\models\\yeuthich.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|c:\\users\\admin\\source\\repos\\doanmonweb\\doanmonweb\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|solutionrelative:doanmonweb\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|c:\\users\\admin\\source\\repos\\doanmonweb\\doanmonweb\\wwwroot\\css\\dangnhap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|solutionrelative:doanmonweb\\wwwroot\\css\\dangnhap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|c:\\users\\admin\\source\\repos\\doanmonweb\\doanmonweb\\models\\chitietsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|solutionrelative:doanmonweb\\models\\chitietsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|c:\\users\\admin\\source\\repos\\doanmonweb\\doanmonweb\\wwwroot\\css\\dangky.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|solutionrelative:doanmonweb\\wwwroot\\css\\dangky.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|c:\\users\\admin\\source\\repos\\doanmonweb\\doanmonweb\\wwwroot\\css\\dathang.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|solutionrelative:doanmonweb\\wwwroot\\css\\dathang.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|c:\\users\\admin\\source\\repos\\doanmonweb\\doanmonweb\\wwwroot\\css\\diachi.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|solutionrelative:doanmonweb\\wwwroot\\css\\diachi.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|c:\\users\\admin\\source\\repos\\doanmonweb\\doanmonweb\\models\\giohangitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{163E4E42-38C1-4BD9-A9C7-E6E0260A0D01}|DoAnMonWeb\\DoAnMonWeb.csproj|solutionrelative:doanmonweb\\models\\giohangitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 243,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DonHang.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\Models\\DonHang.cs",
+              "RelativeDocumentMoniker": "DoAnMonWeb\\Models\\DonHang.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\Models\\DonHang.cs",
+              "RelativeToolTip": "DoAnMonWeb\\Models\\DonHang.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T20:55:41.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "QuanLySPController.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\Controllers\\QuanLySPController.cs",
+              "RelativeDocumentMoniker": "DoAnMonWeb\\Controllers\\QuanLySPController.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\Controllers\\QuanLySPController.cs",
+              "RelativeToolTip": "DoAnMonWeb\\Controllers\\QuanLySPController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T20:51:11.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "quanlySP.css",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\wwwroot\\css\\quanlySP.css",
+              "RelativeDocumentMoniker": "DoAnMonWeb\\wwwroot\\css\\quanlySP.css",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\wwwroot\\css\\quanlySP.css",
+              "RelativeToolTip": "DoAnMonWeb\\wwwroot\\css\\quanlySP.css",
+              "ViewState": "AgIAACoAAAAAAAAAAAAYwDwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-04-08T20:45:47.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\Views\\QuanLySP\\Index.cshtml",
+              "RelativeDocumentMoniker": "DoAnMonWeb\\Views\\QuanLySP\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\Views\\QuanLySP\\Index.cshtml",
+              "RelativeToolTip": "DoAnMonWeb\\Views\\QuanLySP\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-08T20:42:52.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DatHangThanhCong.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\Views\\DonHang\\DatHangThanhCong.cshtml",
+              "RelativeDocumentMoniker": "DoAnMonWeb\\Views\\DonHang\\DatHangThanhCong.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\Views\\DonHang\\DatHangThanhCong.cshtml",
+              "RelativeToolTip": "DoAnMonWeb\\Views\\DonHang\\DatHangThanhCong.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-08T13:55:25.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DangNhap.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\Views\\TaiKhoan\\DangNhap.cshtml",
+              "RelativeDocumentMoniker": "DoAnMonWeb\\Views\\TaiKhoan\\DangNhap.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\Views\\TaiKhoan\\DangNhap.cshtml",
+              "RelativeToolTip": "DoAnMonWeb\\Views\\TaiKhoan\\DangNhap.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-08T08:21:13.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DonHangController.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\Controllers\\DonHangController.cs",
+              "RelativeDocumentMoniker": "DoAnMonWeb\\Controllers\\DonHangController.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\Controllers\\DonHangController.cs",
+              "RelativeToolTip": "DoAnMonWeb\\Controllers\\DonHangController.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAiwD4AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T20:58:42.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\Views\\TaiKhoan\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "DoAnMonWeb\\Views\\TaiKhoan\\Dashboard.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\Views\\TaiKhoan\\Dashboard.cshtml",
+              "RelativeToolTip": "DoAnMonWeb\\Views\\TaiKhoan\\Dashboard.cshtml",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAAABQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-08T11:15:01.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\appsettings.json",
+              "RelativeDocumentMoniker": "DoAnMonWeb\\appsettings.json",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\appsettings.json",
+              "RelativeToolTip": "DoAnMonWeb\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-08T12:32:08.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "VnPayLibrary.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\Models\\VnPayLibrary.cs",
+              "RelativeDocumentMoniker": "DoAnMonWeb\\Models\\VnPayLibrary.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\Models\\VnPayLibrary.cs",
+              "RelativeToolTip": "DoAnMonWeb\\Models\\VnPayLibrary.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAA+wCYAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T12:37:23.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\Program.cs",
+              "RelativeDocumentMoniker": "DoAnMonWeb\\Program.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\Program.cs",
+              "RelativeToolTip": "DoAnMonWeb\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T12:40:40.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DiaChiController.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\Controllers\\DiaChiController.cs",
+              "RelativeDocumentMoniker": "DoAnMonWeb\\Controllers\\DiaChiController.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\Controllers\\DiaChiController.cs",
+              "RelativeToolTip": "DoAnMonWeb\\Controllers\\DiaChiController.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwAwAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T11:16:21.23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DatHang.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\Views\\DonHang\\DatHang.cshtml",
+              "RelativeDocumentMoniker": "DoAnMonWeb\\Views\\DonHang\\DatHang.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\Views\\DonHang\\DatHang.cshtml",
+              "RelativeToolTip": "DoAnMonWeb\\Views\\DonHang\\DatHang.cshtml",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAgwHoAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-08T00:54:16.628Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\Views\\DiaChi\\Index.cshtml",
+              "RelativeDocumentMoniker": "DoAnMonWeb\\Views\\DiaChi\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\Views\\DiaChi\\Index.cshtml",
+              "RelativeToolTip": "DoAnMonWeb\\Views\\DiaChi\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-08T08:10:04.582Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\Views\\GioHang\\Index.cshtml",
+              "RelativeDocumentMoniker": "DoAnMonWeb\\Views\\GioHang\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\Views\\GioHang\\Index.cshtml",
+              "RelativeToolTip": "DoAnMonWeb\\Views\\GioHang\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-08T01:50:52.184Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "GioHangController.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\Controllers\\GioHangController.cs",
+              "RelativeDocumentMoniker": "DoAnMonWeb\\Controllers\\GioHangController.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\Controllers\\GioHangController.cs",
+              "RelativeToolTip": "DoAnMonWeb\\Controllers\\GioHangController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T11:22:11.919Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "giohang.css",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\wwwroot\\css\\giohang.css",
+              "RelativeDocumentMoniker": "DoAnMonWeb\\wwwroot\\css\\giohang.css",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\wwwroot\\css\\giohang.css",
+              "RelativeToolTip": "DoAnMonWeb\\wwwroot\\css\\giohang.css",
+              "ViewState": "AgIAAKIAAAAAAAAAAAAAAMYAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-04-08T08:14:24.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "YeuThichViewComponent.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\ViewComponent\\YeuThichViewComponent.cs",
+              "RelativeDocumentMoniker": "DoAnMonWeb\\ViewComponent\\YeuThichViewComponent.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\ViewComponent\\YeuThichViewComponent.cs",
+              "RelativeToolTip": "DoAnMonWeb\\ViewComponent\\YeuThichViewComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T11:14:49.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "YeuThich.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\Models\\YeuThich.cs",
+              "RelativeDocumentMoniker": "DoAnMonWeb\\Models\\YeuThich.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\Models\\YeuThich.cs",
+              "RelativeToolTip": "DoAnMonWeb\\Models\\YeuThich.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T11:14:51.211Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "DoAnMonWeb\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "DoAnMonWeb\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-04-08T08:25:02.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "dangky.css",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\wwwroot\\css\\dangky.css",
+              "RelativeDocumentMoniker": "DoAnMonWeb\\wwwroot\\css\\dangky.css",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\wwwroot\\css\\dangky.css",
+              "RelativeToolTip": "DoAnMonWeb\\wwwroot\\css\\dangky.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-04-08T08:29:36.812Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "dangnhap.css",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\wwwroot\\css\\dangnhap.css",
+              "RelativeDocumentMoniker": "DoAnMonWeb\\wwwroot\\css\\dangnhap.css",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\wwwroot\\css\\dangnhap.css",
+              "RelativeToolTip": "DoAnMonWeb\\wwwroot\\css\\dangnhap.css",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-04-08T08:29:37.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ChiTietSanPham.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\Models\\ChiTietSanPham.cs",
+              "RelativeDocumentMoniker": "DoAnMonWeb\\Models\\ChiTietSanPham.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\Models\\ChiTietSanPham.cs",
+              "RelativeToolTip": "DoAnMonWeb\\Models\\ChiTietSanPham.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T08:31:38.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "diachi.css",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\wwwroot\\css\\diachi.css",
+              "RelativeDocumentMoniker": "DoAnMonWeb\\wwwroot\\css\\diachi.css",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\wwwroot\\css\\diachi.css",
+              "RelativeToolTip": "DoAnMonWeb\\wwwroot\\css\\diachi.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-04-08T08:10:15.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "dathang.css",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\wwwroot\\css\\dathang.css",
+              "RelativeDocumentMoniker": "DoAnMonWeb\\wwwroot\\css\\dathang.css",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\wwwroot\\css\\dathang.css",
+              "RelativeToolTip": "DoAnMonWeb\\wwwroot\\css\\dathang.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-04-08T04:12:49.112Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "GioHangItem.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\Models\\GioHangItem.cs",
+              "RelativeDocumentMoniker": "DoAnMonWeb\\Models\\GioHangItem.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\DoAnMonWeb\\DoAnMonWeb\\Models\\GioHangItem.cs",
+              "RelativeToolTip": "DoAnMonWeb\\Models\\GioHangItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T01:25:22.319Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

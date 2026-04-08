@@ -1,0 +1,35 @@
+﻿@model DoAnMonWeb.Models.LoaiSanPham
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Sửa loại sản phẩm";
+}
+
+<link href="~/css/quanlysp.css" rel="stylesheet" />
+
+<div class="form-container">
+    <h2 class="title">Sửa loại sản phẩm</h2>
+
+    <form asp-controller="QuanLyLSP" asp-action="SuaLSP" method="post">
+        <input type="hidden" asp-for="MaLoai" />
+
+        <div class="form-group">
+            <label>Tên loại sản phẩm</label>
+            <input asp-for="TenLoai" class="form-control" />
+            <span class="text-danger">
+                @Html.ValidationMessageFor(m => m.TenLoai)
+            </span>
+        </div>
+
+        <div class="btn-group mt-3">
+            <button type="submit" class="btn btn-primary">
+                Lưu thay đổi
+            </button>
+
+            <a asp-controller="QuanLyLSP" asp-action="Index" class="btn btn-secondary">
+                Quay lại
+            </a>
+        </div>
+
+    </form>
+</div>

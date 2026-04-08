@@ -1,0 +1,25 @@
+﻿@model int
+
+@if (Model > 0)
+{
+    <span class="cart-badge">@Model</span>
+}
+
+<style>
+    .cart-badge {
+        position: absolute;
+        top: -10px;
+        right: -12px;
+        background-color: #ff0000;
+        color: white;
+        font-size: 11px;
+        font-weight: bold;
+        border-radius: 50%;
+        padding: 2px 6px;
+        min-width: 18px;
+        text-align: center;
+        line-height: 1.2;
+        border: 1px solid white;
+        z-index: 10;
+    }
+</style>

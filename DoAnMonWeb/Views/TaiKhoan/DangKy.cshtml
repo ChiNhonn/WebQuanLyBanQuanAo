@@ -1,0 +1,39 @@
+﻿@model TaiKhoan
+@{
+	Layout = "_Layout";
+	ViewData["Title"] = "Đăng ký";
+}
+<link rel="stylesheet" href="~/css/dangky.css" asp-append-version="true" />
+
+<div class="container__outsite">
+	<div class="container__content">
+		<div class="content__header">
+			<h2>Tạo tài khoản của bạn</h2>
+			<h3>Quý khách vui lòng nhập thông tin của mình</h3>
+		</div>
+		<form class="register" asp-controller="TaiKhoan" asp-action="DangKy" method="post">
+			<input asp-for="Ten" placeholder="Nhập tên đăng nhập..." />
+
+			<input asp-for="MatKhau" placeholder="Nhập mật khẩu..." type="password" />
+
+			<input asp-for="Email" placeholder="Nhập Email..." type="email" />
+
+			<input asp-for="FullName" placeholder="Nhập tên bạn muốn hiển thị..." />
+
+			<input asp-for="DiaChi" placeholder="Nhập địa chỉ của bạn..." />
+
+			<input asp-for="Sdt" placeholder="Nhập số điện thoại của bạn..." />
+			<div class="radio">
+				<input asp-for="GioiTinh" type="radio" value="Nam" checked /> Nam
+				<input asp-for="GioiTinh" type="radio" value="Nữ" /> Nữ
+			</div>
+			<button type="submit">
+				Đăng ký
+			</button>
+			<br />
+			<div>
+				<a asp-controller="SanPham" asp-action="Index">⬅ Quay lại trang chủ </a>
+			</div>
+		</form>
+	</div>
+</div>

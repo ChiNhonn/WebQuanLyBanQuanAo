@@ -1,0 +1,18 @@
+﻿@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Đặt hàng thành công";
+}
+
+<div class="container text-center py-5">
+	<div class="mb-4">
+        <img src="~/images/icon/check.png" width="70" />
+    </div>
+    <h2 class="text-success fw-bold">ĐẶT HÀNG THÀNH CÔNG!</h2>
+    <p class="mt-3">Cảm ơn bạn đã tin tưởng mua sắm tại shop.</p>
+    <p>Mã đơn hàng của bạn là: <strong>#@ViewBag.MaDonHang</strong></p>
+
+    <div class="mt-4">
+        <a href="@Url.Action("Index", "SanPham")" class="btn btn-dark px-4 py-2">Tiếp tục mua hàng</a>
+        <a href="@Url.Action("DashboardLogin", "TaiKhoan")" class="btn btn-outline-dark px-4 py-2">Xem đơn hàng</a>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+﻿@model DoAnMonWeb.Models.KichCo
+
+<h2>Sửa kích cỡ</h2>
+
+<form asp-controller="QuanLyKichCo" asp-action="SuaKC" method="post">
+
+    <input type="hidden" asp-for="MaKichCo" />
+
+    <div class="form-group">
+        <label>Tên kích cỡ</label>
+        <input asp-for="TenKichCo" class="form-control" />
+        <span class="text-danger">@Html.ValidationMessageFor(m => m.TenKichCo)</span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Lưu</button>
+
+    <a asp-controller="QuanLySP"
+       asp-action="Index"
+       asp-route-tab="kichco"
+       class="btn btn-secondary">
+        Quay lại
+    </a>
+</form>

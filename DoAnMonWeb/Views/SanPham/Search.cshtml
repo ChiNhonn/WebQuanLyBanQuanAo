@@ -1,0 +1,65 @@
+﻿@model List<SanPham>
+@{
+	Layout = "_Layout";
+	ViewData["Title"] = "Tìm kiếm sản phẩm";
+}
+<link rel="stylesheet" href="~/css/search.css"/>
+<section>
+	<div class="container__search">
+		<div class="header__trangchu">
+			<a asp-controller="SanPham" asp-action="Index">
+				Trang chủ
+			</a>
+		</div>
+		/
+		<div class="header__timkiem">
+			@ViewBag.KeyWord
+		</div>
+	</div>
+</section>
+<section>
+	<div class="container__body__search">
+		<div>
+			<h1 class="timkiem__h1">
+				Kết quả tìm kiếm 
+			</h1>
+			<h2 class="timkiem__h2">
+				Có @Model.Count sản phẩm được tìm thấy
+				Kết quả tìm kiếm cho @ViewBag.Keyword
+			</h2>
+		</div>
+        <div class="product__container">
+            @foreach (var item in Model)
+            {
+                <div class="product__card">
+                    <div class="product__img-container">
+                        <img src="~/images/QuanAo/@item.HinhAnh" alt="@item.TenSP" />
+
+                        <div class="size-overlay">
+                            <div class="size-header-row">
+                                <p class="size-title">Thêm nhanh +</p>
+                                <a href="@Url.Action("ThemYeuThich", "YeuThich", new { id = item.MaSP, size = "M" })" class="btn-heart">
+                                    <img src="~/images/icon/heart (1).png" alt="Yêu thích" />
+                                </a>
+                            </div>
+                            <div class="size-options">
+                                <a href="@Url.Action("ThemGioHang", "GioHang", new { id = item.MaSP, size = "S" })" class="btn-size">S</a>
+                                <a href="@Url.Action("ThemGioHang", "GioHang", new { id = item.MaSP, size = "M" })" class="btn-size">M</a>
+                                <a href="@Url.Action("ThemGioHang", "GioHang", new { id = item.MaSP, size = "L" })" class="btn-size">L</a>
+                                <a href="@Url.Action("ThemGioHang", "GioHang", new { id = item.MaSP, size = "XL" })" class="btn-size">XL</a>
+                                <a href="@Url.Action("ThemGioHang", "GioHang", new { id = item.MaSP, size = "XXL" })" class="btn-size">XXL</a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-container">
+                        <h3 class="name__sanpham__h3">@item.TenSP</h3>
+                        <h4 class="mota__sanpham__h4">@item.MoTa</h4>
+                        <p class="name__sanpham">@item.Gia.ToString("N0") đ</p>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>

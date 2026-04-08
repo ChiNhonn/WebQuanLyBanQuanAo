@@ -1,0 +1,106 @@
+﻿.container__outsite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f7f6; 
+    padding: 20px;
+}
+
+.container__content {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+    width: 100%;
+    max-width: 450px; 
+    border: none; 
+}
+
+.content__header {
+    margin-bottom: 30px;
+}
+
+.content__header h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+.content__header h3 {
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+    margin-top: 5px;
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+}
+
+.register input:not([type="radio"]) {
+    width: 100%;
+    height: 45px;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+.register input:focus {
+    border-color: #000; 
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.radio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.radio input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #000; 
+}
+
+.register button {
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register button:hover {
+    background-color: #333;
+}
+
+.register div {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register div a {
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.register div a:hover {
+    color: #000;
+}

@@ -1,0 +1,24 @@
+﻿@model DoAnMonWeb.Models.TaiKhoan
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Chi tiết tài khoản";
+}
+
+<h2>Chi tiết tài khoản</h2>
+
+<div class="card p-3">
+    <p><b>Mã:</b> @Model.MaTK</p>
+    <p><b>Tên đăng nhập:</b> @Model.Ten</p>
+    <p><b>Họ tên:</b> @Model.FullName</p>
+    <p><b>Email:</b> @Model.Email</p>
+    <p><b>SĐT:</b> @Model.Sdt</p>
+    <p><b>Địa chỉ:</b> @Model.DiaChi</p>
+    <p><b>Giới tính:</b> @Model.GioiTinh</p>
+    <p><b>Vai trò:</b> @Model.VaiTro</p>
+    <p><b>Ngày tạo:</b> @Model.ThoiGianTao?.ToString("dd/MM/yyyy HH:mm")</p>
+</div>
+
+<a asp-controller="QuanLySP" asp-action="Index" class="btn btn-secondary mt-2">
+    Quay lại
+</a>
